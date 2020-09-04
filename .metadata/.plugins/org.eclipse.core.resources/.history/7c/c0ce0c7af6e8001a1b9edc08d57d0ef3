@@ -1,0 +1,16 @@
+package multithreading.thread.creation.example;
+
+public class Main {
+	
+	public static void main(String[] args) throws InterruptedException{
+		Thread thread = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				//Code that will run in a new thread
+				System.out.println("We are now on thread " + Thread.currentThread().getName());
+			}
+			
+		});
+	}
+
+}
